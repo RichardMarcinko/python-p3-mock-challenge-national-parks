@@ -113,7 +113,8 @@ class Visitor:
     
     def total_visits_at_park(self, park):
         # from NationalPark import NationalPark
-        if isinstance(park, NationalPark):
-            return len([trip for trip in self.trips() if trip.national_park == self])
-        else:
-            return 0
+        # if isinstance(park, NationalPark):
+        return len([trip for trip in self.trips() if trip.national_park == park])
+
+        # else:
+        #     return 0
